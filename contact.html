@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact Harishwar S | Get in Touch</title>
+  <meta name="description" content="Contact Harishwar S about web development opportunities, projects or workshops using the accessible contact form.">
+  <meta name="author" content="Harishwar S">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#14213d">
+  <link rel="canonical" href="https://example.com/contact.html">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%2314213d'/%3E%3Ctext x='16' y='22' font-size='18' text-anchor='middle' fill='white' font-family='sans-serif'%3EH%3C/text%3E%3C/svg%3E">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Contact Harishwar S">
+  <meta property="og:description" content="Send a message to Harishwar S.">
+  <meta property="og:url" content="https://example.com/contact.html">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html">Harishwar S</a>
+      <nav aria-label="Main">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <div class="container">
+      <h1>Contact</h1>
+      <p>Fields marked <span class="req" aria-hidden="true">*</span><span class="visually-hidden">with an asterisk</span> are required.</p>
+
+      <section aria-labelledby="form-title">
+        <h2 id="form-title">Send me a message</h2>
+
+        <!-- TODO: point action at your form backend (Formspree, Netlify Forms, own API) -->
+        <form id="contact-form" action="#" method="post" novalidate>
+          <div class="form-field">
+            <label for="name">Full name <span class="req" aria-hidden="true">*</span></label>
+            <input type="text" id="name" name="name" autocomplete="name" required aria-required="true" aria-describedby="name-error">
+            <p class="error-msg" id="name-error"></p>
+          </div>
+
+          <div class="form-field">
+            <label for="email">Email address <span class="req" aria-hidden="true">*</span></label>
+            <p class="hint" id="email-hint">We'll only use this to reply to you.</p>
+            <input type="email" id="email" name="email" autocomplete="email" required aria-required="true" aria-describedby="email-hint email-error">
+            <p class="error-msg" id="email-error"></p>
+          </div>
+
+          <div class="form-field">
+            <label for="topic">Topic</label>
+            <select id="topic" name="topic">
+              <option value="opportunity">Job or internship opportunity</option>
+              <option value="project">Project collaboration</option>
+              <option value="workshop">Workshop or event</option>
+              <option value="other">Something else</option>
+            </select>
+          </div>
+
+          <div class="form-field">
+            <label for="message">Message <span class="req" aria-hidden="true">*</span></label>
+            <textarea id="message" name="message" required aria-required="true" aria-describedby="message-error"></textarea>
+            <p class="error-msg" id="message-error"></p>
+          </div>
+
+          <button class="btn" type="submit">Send message</button>
+          <div id="form-status" class="form-status" role="status" aria-live="polite" tabindex="-1"></div>
+        </form>
+        <noscript><p>JavaScript is disabled. Please reach me through my <a href="https://github.com/Hari-eshwar">GitHub profile</a>.</p></noscript>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <nav aria-label="Footer">
+        <ul>
+          <li><a href="https://github.com/Hari-eshwar" rel="noopener noreferrer">GitHub profile<span class="visually-hidden"> (opens in a new tab)</span></a></li>
+          <li><a href="index.html">Home</a></li>
+        </ul>
+      </nav>
+      <p><small>&copy; <time datetime="2026">2026</time> Harishwar S. All rights reserved.</small></p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
